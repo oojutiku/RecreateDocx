@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Chain of Custody Form for Onsite Drug & Alcohol Screening</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Chain of Custody Form for Onsite Drug & Alcohol Screening</h1>
+        
+        <form>
+            <ul class="flex-container">
+                <!--Donor Details-->
+                <ul class="flex-div">
+                    <li>
+                        <h2>Donor Details</h2><br>
+                    </li>
+                    <li>
+                        <label for="DName">Donor name</label>
+                        <input type="text" id="DName" name="DonorName" required/>
+                    </li>
+                    <li>
+                        <label for="DOB">Date of birth</label>
+                        <input type="date" id="DOB" name="Birthday" required/>
+                    </li>
+                    <li>
+                        <label for="DL">Driver's Licence #</label>
+                        <input type="text" id="DL" name="Identification"/>
+                    </li>
+                    <li>
+                        <label for="PP">or Passport #</label>
+                        <input type="text" id="PP" name="Identification"/>
+                    </li>
+                    <li>
+                        <label for="CI">or Company ID</label>
+                        <input type="text" id="CI" name="Identification"/>
+                    </li>
+                    <li>
+                        <label for="SCI">and supervisor confirmation of identity</label>
+                        <input type="checkbox" id="SCI" name="Confirmation" required/>
+                    </li> 
+                </ul>
+                <!--Employer-->
+                <ul class="flex-div">
+                    <li>
+                        <h2>Employer/requesting authority</h2>
+                    </li>
+                    <li>
+                        <label for="CName">Company name</label>
+                        <input type="text" id="CName" name="CompanyName" required/>
+                    </li>
+                    <li>
+                        <label for="Contact">Contact</label>
+                        <input type="text" id="Contact" name="ContactInfo" required/>
+                    </li>
+                    <li>
+                        <label for="Phone">Phone Number</label>
+                        <input type="tel" id="Phone" name="PhoneNumber" required/>
+                    </li>
+                    <li>
+                        <label for="Address">Address</label>
+                        <input type="text" id="Address" name="EmployerAddress"/>
+                    </li>
+                    <li>
+                        <p>Reason</p>
+                        
+                            <li>
+                                <input type=radio id="PE" name="Reason"/>
+                                <label for="PE">pre-employment</label>
+                            </li>
+                            <li>
+                                <input type=radio id="RC" name="Reason"/>
+                                <label for="RC">reasonable cause</label>
+                            </li>
+                            <li>
+                                <input type=radio id="RND" name="Reason"/>
+                                <label for="RND">random</label>
+                            </li>
+                            <li>
+                                <input type=radio id="PI" name="Reason"/>
+                                <label for="PI">post-incident</label>
+                            </li>
+                            <li>
+                                <input type=radio id="Other" name="Reason"/>
+                                <label for="Other">other</label>
+                                <input type="text" name="Other"/>
+                            </li>
+                        
+                    </li>
+                </ul>
+                <!--Medications-->
+                <ul class="flex-div">
+                    <li>                
+                        <h2>Medications:</h2>
+                        <p>specific name/dosage, and category (cough/cold/allergy, diet/supplement/body-building, herbal/vitamins, painkillers/anti-inflammatories, tranquilisers/sedative, or other)</p>
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                    <li>
+                        <input type="text" name="Medications">
+                    </li>
+                </ul>
+                <!--Specimen-->
+                <ul class="flex-div">
+                    <li>
+                        <h2>Specimen</h2>
+                        <input type="radio" name="Specimen"/> <label>urine</label>
+                        <input type="radio" name="Specimen"/> <label>saliva</label>
+                        <label>| temperature read within 4 minutes</label>
+                        <input type="radio" name="Temperature"/> <label>yes</label>
+                        <input type="radio" name="Temperature"/> <label>no</label>
+                        <label>| within range 33C - 38C</label>
+                        <input type="radio" name="InRange"/> <label>yes</label>
+                        <input type="radio" name="InRange"/> <label>no</label>
+                    </li>
+                    <ul class="flex-inner">
+                        <table>
+                            <tr>
+                                <th>Specimen Integrity</th>
+                                <th>Pass</th>
+                                <th>Fail</th>
+                                <th>Not Tested</th>
+                            </tr>
+                            <tr>
+                                <th>Bleach/oxidants</th>
+                                <td><input type="radio" name="Bleach/oxidants"/></td>
+                                <td><input type="radio" name="Bleach/oxidants"/></td>
+                                <td><input type="radio" name="Bleach/oxidants"/></td>
+                            </tr>
+                            <tr>
+                                <th>pH</th>
+                                <td><input type="radio" name="ph"/></td>
+                                <td><input type="radio" name="ph"/></td>
+                                <td><input type="radio" name="ph"/></td>
+                            </tr>
+                            <tr>
+                                <th>Creatinine</th>
+                                <td><input type="radio" name="Creatinine"/></td>
+                                <td><input type="radio" name="Creatinine"/></td>
+                                <td><input type="radio" name="Creatinine"/></td>
+                            </tr>
+                            <tr>
+                                <th>Nitrite</th>
+                                <td><input type="radio" name="Nitrite"/></td>
+                                <td><input type="radio" name="Nitrite"/></td>
+                                <td><input type="radio" name="Nitrite"/></td>
+                            </tr>
+                            <tr>
+                                <th>SG</th>
+                                <td><input type="radio" name="SG"/></td>
+                                <td><input type="radio" name="SG"/></td>
+                                <td><input type="radio" name="SG"/></td>
+                            </tr>
+                            <tr>
+                                <th>Glut</th>
+                                <td><input type="radio" name="Glut"/></td>
+                                <td><input type="radio" name="Glut"/></td>
+                                <td><input type="radio" name="Glut"/></td>
+                            </tr>
+                        </table>
+                    </ul>
+                    <ul class="flex-inner">
+                        <li>
+                            <label for="SDN">Screening device name</label>
+                            <input type="text" id="SDN" name="SDName" required/>
+                        </li>
+                        <li>
+                            <label for="BN">Batch #</label>
+                            <input type="text" id="BN" name="Batch" required/>
+                        </li>
+                        <li>
+                            <label for="Exp">Expiry Date</label>
+                            <input type="date" id="Exp" name="ExpiryDate" required/>
+                        </li>
+                        <li>Controls:</li>
+                        <li>
+                            <label>Positive</label>
+                            <input type="radio" name="Positive"/> <label>pass</label>
+                            <input type="radio" name="Positive"/> <label>fail</label>
+                        </li>
+                        <li>
+                            <label>Negative</label>
+                            <input type="radio" name="Negative"/> <label>pass</label>
+                            <input type="radio" name="Negative"/> <label>fail</label>
+                        </li>
+                        <li>
+                            <label>Screening test result</label>
+                            <input type="radio" name="Screening"/> <label>negative</label>
+                            <input type="radio" name="Screening"/> <label>not negative, requires further testing</label>
+                        </li>
+                    </ul>
+                </ul>
+                <!--Results-->
+                <ul class="flex-div">
+                    <li><h2>Results</h2></li>
+                    <ul class="flex-inner">
+                        <table>
+                            <tr>
+                                <th>Results</th>
+                                <th>Negative</th>
+                                <th>Not Negative</th>
+                            </tr>
+                            <tr>
+                                <th>AMP</th>
+                                <td><input type="radio" name="AMP"/></td>
+                                <td><input type="radio" name="AMP"/></td>
+                            </tr>
+                            <tr>
+                                <th>COC</th>
+                                <td><input type="radio" name="COC"/></td>
+                                <td><input type="radio" name="COC"/></td>
+                            </tr>
+                            <tr>
+                                <th>THC</th>
+                                <td><input type="radio" name="THC"/></td>
+                                <td><input type="radio" name="THC"/></td>
+                            </tr>
+                            <tr>
+                                <th>OPI/MOP</th>
+                                <td><input type="radio" name="OPI/MOP"/></td>
+                                <td><input type="radio" name="OPI/MOP"/></td>
+                            </tr>
+                            <tr>
+                                <th>BZO</th>
+                                <td><input type="radio" name="BZO"/></td>
+                                <td><input type="radio" name="BZO"/></td>
+                            </tr>
+                            <tr>
+                                <th>MET</th>
+                                <td><input type="radio" name="MET"/></td>
+                                <td><input type="radio" name="MET"/></td>
+                            </tr>
+                        </table>
+                    </ul>
+                    <ul class="flex-inner">
+                        <li>
+                            <p>Synthetic cannabis:</p>
+                            <input type="radio" id="negative" name="syntheticcancabis">
+                            <label for="negative">negative</label>
+                            <input type="radio" id="notnegative" name="syntheticcancabis">
+                            <label for="notnegative">not negative</label>
+                            <input type="radio" id="nottested" name="syntheticcancabis">
+                            <label for="nottested">not tested</label>
+                        </li>
+                        <li>
+                            <label>Batch #</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>Expiry date</label>
+                            <input type="date"/>
+                        </li>
+                        <li>
+                            <label>Breath alcohol test:Model</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>Serial #</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>Calibration valid to</label>
+                            <input type="date"/>
+                        </li>
+                        <li>
+                            <label>1st test: level</label>
+                            <input type=number/>
+                            <label>time</label>
+                            <input type="datetime"/>
+                            <input type="radio" name="first"/> <label>pass</label>
+                            <input type=radio name="first"/> <label>fail</label>
+                        </li>
+                        <li>
+                            <label>2nd test: level</label>
+                            <input type=number/>
+                            <label>time</label>
+                            <input type="datetime"/>
+                            <input type="radio" name="second"/> <label>pass</label>
+                            <input type=radio name="second"/> <label>fail</label>
+                        </li>
+                    </ul>
+                </ul>
+                <!--Collector Certification-->
+                <ul class="flex-div">
+                    <li>
+                        <h2>Collector certification</h2>
+                        <p>I certify that I witnessed the donor’s signature and that the specimen identified on this form was provided to me by the donor whose consent and certification appears above, bears the same identification as above, and that the urine specimen has been collected in accordance with AS/NZS 4308:2008.</p>
+                    </li>
+                    <li>
+                        <label>Name of collector</label>
+                        <input type="text" required/>
+                    </li>
+                    <li>
+                        <label>Collector Signature</label>
+                        <input type="text" required/>
+                    </li>
+                    <li>
+                        <label>Date & time of collection</label>
+                        <input type="datetime" required/>
+                    </li>
+                    <li>
+                        <label>NZQA certified</label>
+                        <input type="radio" name="NZQA"/> <label>yes</label>
+                        <input type="radio" name="NZQA"/> <label>no</label>
+                    </li>
+                </ul>
+                <!--Donor Declaration-->
+                <ul class="flex-div">
+                    <li>
+                        <h2>Donor Declaration</h2>
+                    <p>I certify that the information above is true and correct and that the urine specimen associated with this form is my own and was provided by me to the authorised collector. The testing was carried out correctly in my presence. I consent to my urine or saliva sample being delivered to an appropriate laboratory for more sophisticated analysis should the collector deem it necessary. I consent to the release of relevant details on this form to the nominated representatives(s) of the requesting authority indicated above.</p>
+                    </li>
+                    <li>
+                        <label>Donor name/ID #</label>
+                        <input type="text" required/>
+                    </li>
+                    <li>
+                        <label>Donor signature</label>
+                        <input type="text" required/>
+                    </li>
+                    <li>
+                        <label>Date</label>
+                        <input type="date" required/>
+                    </li>
+                </ul>
+                <li> <button type="submit">Submit</button> </li>
+            </ul>    
+        </form>
+    
+    </body>
+    
+</html>
