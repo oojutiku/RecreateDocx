@@ -42,8 +42,17 @@ ul {
     list-style: none;
 }
 
-td, th{border: 1px solid black;}
-table input {margin-left: 45%;}
+#divtable {display: table;}
+#left, #middle, #right{
+    border: 1px solid black;
+    display: table-cell;
+    font-weight: bold;
+    
+}
+#middle, #right {text-align: center;}
+#row {
+    display: table-row;
+}
 
 
 input {width: 100%;}
